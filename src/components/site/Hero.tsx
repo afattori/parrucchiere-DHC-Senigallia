@@ -56,19 +56,17 @@ export const Hero = () => {
         className="relative z-[2] mt-12 flex flex-col items-center gap-4 lg:mt-0 lg:flex-row lg:items-center lg:justify-end"
       >
         <div className="relative h-[min(56vw,560px)] w-[min(36vw,385px)] overflow-hidden bg-clay max-lg:h-[260px] max-lg:w-[180px]">
-          {/* Hair sculpture */}
-          <div
+          <img
+            src="/your-hair-energy.png"
+            alt=""
             aria-hidden="true"
-            className="absolute inset-[-5%]"
-            style={{
-              background:
-                "radial-gradient(circle at 57% 42%, hsl(20 80% 80%) 0 15%, transparent 15.3%), radial-gradient(ellipse at 46% 56%, hsl(30 18% 18%) 0 21%, transparent 21.3%), radial-gradient(ellipse at 58% 28%, hsl(30 18% 14%) 0 20%, transparent 20.3%), linear-gradient(140deg, hsl(14 70% 60%), hsl(20 80% 75%))",
-            }}
+            className="absolute inset-0 h-full w-full object-cover object-center"
           />
-          <p className="absolute right-4 top-[17px] font-mono-display text-[10px] tracking-[1px] text-background [writing-mode:vertical-rl]">
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/75 via-foreground/10 to-transparent" />
+          <p className="absolute right-4 top-[17px] font-mono-display text-[10px] tracking-[1px] text-background drop-shadow-md [writing-mode:vertical-rl]">
             THE PERSONAL CUT
           </p>
-          <p className="absolute bottom-6 left-5 font-display text-[clamp(24px,2.4vw,31px)] font-semibold leading-[0.82] tracking-[-1px] text-background">
+          <p className="absolute bottom-6 left-5 font-display text-[clamp(24px,2.4vw,31px)] font-semibold leading-[0.82] tracking-[-1px] text-background drop-shadow-md">
             YOUR
             <br />
             HAIR,
