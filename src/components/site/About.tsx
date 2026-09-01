@@ -13,7 +13,7 @@ export const About = () => {
         </Reveal>
 
         <Reveal className="mt-[43px]">
-          <h2 className="font-display text-[clamp(39px,4.7vw,68px)] font-semibold leading-[0.93] tracking-[-3px]">
+          <h2 className="font-display text-[clamp(39px,4.7vw,68px)] font-semibold leading-[1.08] tracking-[-3px]">
             Il capello è materia.
             <br />
             <em className="font-medium italic">

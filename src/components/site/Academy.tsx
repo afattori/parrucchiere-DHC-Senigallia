@@ -10,7 +10,7 @@ export const Academy = () => {
       {/* Art */}
       <Reveal className="relative h-[360px] overflow-hidden bg-foreground text-background lg:h-[475px]">
         <img
-          src="https://vibe.filesafe.space/1788180416491982994/assets/510f6260-c257-4fdd-a891-fe55aaa5735d.png"
+          src={`${import.meta.env.BASE_URL}craft-is-contagious.png`}
           alt="Postazione di formazione del corso Diego Academy"
           className="absolute inset-0 h-full w-full object-cover"
           loading="lazy"
