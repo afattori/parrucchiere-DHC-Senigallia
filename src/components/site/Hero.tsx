@@ -63,9 +63,6 @@ export const Hero = () => {
             className="absolute inset-0 h-full w-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/75 via-foreground/10 to-transparent" />
-          <p className="absolute right-4 top-[17px] font-mono-display text-[10px] tracking-[1px] text-background drop-shadow-md [writing-mode:vertical-rl]">
-            THE PERSONAL CUT
-          </p>
           <p className="absolute bottom-6 left-5 font-display text-[clamp(24px,2.4vw,31px)] font-semibold leading-[0.82] tracking-[-1px] text-background drop-shadow-md">
             YOUR
             <br />
