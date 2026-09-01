@@ -21,7 +21,7 @@ export const Academy = () => {
           <br />
           KEEP CREATING
         </p>
-        <div className="font-display absolute bottom-[18px] left-7 text-[clamp(43px,5vw,70px)] font-semibold leading-[0.77] tracking-[-3px]">
+        <div className="font-display absolute bottom-[18px] left-7 right-7 text-[clamp(40px,4.4vw,62px)] font-semibold leading-[0.77] tracking-[-3px]">
           CRAFT
           <br />
           IS
@@ -35,7 +35,7 @@ export const Academy = () => {
         <div className="font-mono-display flex items-center gap-[22px] text-[10px] tracking-[1.2px]">
           <span className="text-clay">03</span> DIEGO ACADEMY
         </div>
-        <h2 className="font-display mt-[43px] mb-[23px] text-[clamp(39px,4.7vw,68px)] font-semibold leading-[0.93] tracking-[-3px]">
+        <h2 className="font-display mt-[43px] mb-[23px] text-[clamp(39px,4.7vw,68px)] font-semibold leading-[1.08] tracking-[-3px]">
           Condividere la tecnica.
           <br />
           <em className="font-medium italic">Moltiplicare l'ispirazione.</em>
