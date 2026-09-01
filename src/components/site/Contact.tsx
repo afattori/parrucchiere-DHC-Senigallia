@@ -2,6 +2,13 @@ import { Reveal } from "./Reveal";
 import { salon } from "@/data/salon";
 
 export const Contact = () => {
+  const weekdayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const currentWeekday = new Intl.DateTimeFormat("en-US", {
+    timeZone: "Europe/Rome",
+    weekday: "short",
+  }).format(new Date());
+  const currentDayIndex = weekdayNames.indexOf(currentWeekday);
+
   return (
     <section
       id="contatti"
@@ -44,27 +51,25 @@ export const Contact = () => {
         >
           {salon.phone}
         </a>
-        <div className="border-t border-primary-foreground/30 pt-[14px] text-[11px] tracking-[0.3px]">
-          <p className="mb-[11px] flex justify-between gap-[15px]">
-            <span>Martedì — Mercoledì</span>
-            <b className="font-normal whitespace-nowrap">08:30 — 18:30</b>
-          </p>
-          <p className="mb-[11px] flex justify-between gap-[15px]">
-            <span>Giovedì</span>
-            <b className="font-normal whitespace-nowrap">12:00 — 20:00</b>
-          </p>
-          <p className="mb-[11px] flex justify-between gap-[15px]">
-            <span>Venerdì</span>
-            <b className="font-normal whitespace-nowrap">08:30 — 18:00</b>
-          </p>
-          <p className="mb-[11px] flex justify-between gap-[15px]">
-            <span>Sabato</span>
-            <b className="font-normal whitespace-nowrap">09:00 — 18:00</b>
-          </p>
-          <p className="flex justify-between gap-[15px]">
-            <span>Domenica — Lunedì</span>
-            <b className="font-normal whitespace-nowrap">Chiuso</b>
-          </p>
+        <div className="space-y-1 border-t border-primary-foreground/30 pt-[14px] text-[11px] tracking-[0.3px]">
+          {salon.hours.map(({ day, time }, index) => {
+            const isToday = index === currentDayIndex;
+
+            return (
+              <p
+                key={day}
+                aria-current={isToday ? "date" : undefined}
+                className={`flex items-center justify-between gap-[15px] rounded-lg px-3 py-2 transition-colors ${
+                  isToday
+                    ? "bg-primary-foreground font-bold text-foreground shadow-sm"
+                    : "text-primary-foreground"
+                }`}
+              >
+                <span>{day}</span>
+                <b className="font-normal whitespace-nowrap">{time}</b>
+              </p>
+            );
+          })}
         </div>
         <a
           href={salon.instagram}
