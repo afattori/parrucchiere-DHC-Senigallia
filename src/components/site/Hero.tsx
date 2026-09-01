@@ -57,7 +57,7 @@ export const Hero = () => {
       >
         <div className="relative h-[min(56vw,560px)] w-[min(36vw,385px)] overflow-hidden bg-clay max-lg:h-[260px] max-lg:w-[180px]">
           <img
-            src="/your-hair-energy.png"
+            src={`${import.meta.env.BASE_URL}your-hair-energy.png`}
             alt=""
             aria-hidden="true"
             className="absolute inset-0 h-full w-full object-cover object-center"
