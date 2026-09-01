@@ -43,7 +43,7 @@ export const Academy = () => {
         <p className="mb-7 max-w-[490px] text-[14px] leading-[1.75] text-muted-foreground">
           Diego è{" "}
           <strong className="text-foreground">
-            milk_shake International Artist
+            milk_shake Global Artist
           </strong>
           : la formazione è parte del suo linguaggio. Corsi, incontri e giornate
           di ispirazione per professionisti che vogliono far crescere il proprio
