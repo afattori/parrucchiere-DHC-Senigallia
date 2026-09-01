@@ -32,7 +32,7 @@ export const About = () => {
             >
               <iframe
                 src="https://www.instagram.com/p/CxxJoaTNFqv/embed"
-                className="h-[240px] w-full sm:h-[420px] lg:h-[520px]"
+                className="h-[267px] w-[111.12%] origin-top-left scale-90 sm:h-[420px] sm:w-full sm:scale-100 lg:h-[520px]"
                 frameBorder={0}
                 loading="lazy"
                 scrolling="no"

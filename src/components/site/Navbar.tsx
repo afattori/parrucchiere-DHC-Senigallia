@@ -40,21 +40,23 @@ export const Navbar = () => {
 
       <nav
         aria-label="Navigazione principale"
-        className="flex items-center gap-3 sm:gap-6 lg:gap-7"
+        className="flex items-center gap-2 sm:gap-6 lg:gap-7"
       >
         {links.map((l) => (
           <a
             key={l.href}
             href={l.href}
-            className="text-[10px] font-bold uppercase tracking-wide text-background/80 transition-colors hover:text-background sm:text-xs"
+            className="whitespace-nowrap text-[9px] font-bold uppercase tracking-wide text-background/80 transition-colors hover:text-background sm:text-xs"
           >
             <span className="hidden sm:inline">{l.label}</span>
-            <span className="sm:hidden">{l.label.split(" ")[0]}</span>
+            <span className="sm:hidden">
+              {l.href === "#cult" ? l.label : l.label.split(" ")[0]}
+            </span>
           </a>
         ))}
         <a
           href="#contatti"
-          className="shrink-0 rounded-full border border-background/40 px-3 py-2 text-[9px] font-bold uppercase tracking-wide transition-colors hover:bg-background hover:text-foreground sm:px-[17px] sm:py-[11px] sm:text-xs"
+          className="shrink-0 rounded-full border border-background/40 px-2.5 py-2 text-[9px] font-bold uppercase tracking-wide transition-colors hover:bg-background hover:text-foreground sm:px-[17px] sm:py-[11px] sm:text-xs"
         >
           Prenota
         </a>
